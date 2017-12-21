@@ -1,11 +1,11 @@
 # kubernetes-namespace
 
 
-####Create mongo pod and services
+#### Create mongo pod and services
 > kubectl create -f mongo-rc.yml<br>
 > kubectl create -f mongo-svc.yml
 
-####Create user pod
+#### Create user pod
 > kubectl create -f user-pod.yml
 
 
@@ -36,8 +36,8 @@ kubectl logs user --namespace=demo
 #### Show labels
 > kubectl get pod user --show-labels --namespace=demo
 
-####Set default namespace
+#### Set default namespace
 > kubectl config set-context $(kubectl config current-context) --namespace={name}
 
-####Validate namespace
+#### Validate namespace
 > kubectl config view | grep namespace:
