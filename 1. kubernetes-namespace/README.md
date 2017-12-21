@@ -1,8 +1,9 @@
 # kubernetes-namespace
-kubernetes-namespace
 
 
+####Set default namespace
+> kubectl config set-context $(kubectl config current-context) --namespace=<name>
 
 
-Presentation Link: 
-https://docs.google.com/presentation/d/1bx6l-GuDJMxXxid65vT-NpdFklDuEprWW4wuqj7qk2A/edit?usp=sharing
+####Validate namespace
+> kubectl config view | grep namespace:

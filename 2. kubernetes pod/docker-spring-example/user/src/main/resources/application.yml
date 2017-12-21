@@ -1,0 +1,9 @@
+server:
+  port: 8012
+
+spring:
+  data:
+    mongodb:
+      database: user
+      host: mongo
+      port: 27017

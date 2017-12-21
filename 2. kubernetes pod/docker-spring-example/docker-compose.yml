@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo:3.4
+    container_name: mongo
+    volumes:
+      - ./infra/mongo/:/data/db
+
+  docker-user:
+    image: jinternal/user
+    container_name: user
+    ports:
+        - 8012:8012
