@@ -27,7 +27,7 @@
 > ssh -i ~/.minikube/machines/minikube/id_rsa docker@$(minikube ip)
 
 #### Access pod logs
-kubectl logs user --namespace=demo
+> kubectl logs user --namespace=demo
 
 #### Copying files to and from Containers
 > kubectl cp <pod-name>:/captures/capture3.txt ./capture3.txt<br>
