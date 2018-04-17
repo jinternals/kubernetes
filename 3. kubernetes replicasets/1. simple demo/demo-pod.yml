@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hello-world
+  namespace: demo
+  labels:
+    env: dev
+    app: hello-world
+spec:
+  containers:
+  - name: hello-world
+    image: jinternals/hello-world:latest
+    ports:
+    - containerPort: 8080
+      protocol: TCP

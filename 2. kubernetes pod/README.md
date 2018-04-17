@@ -1,4 +1,4 @@
-# kubernetes-namespace
+# kubernetes-pods
 
 
 #### Create mongo pod and services
